@@ -32,6 +32,7 @@ $config = require __DIR__.'/../configuration.php';
  * The namespaces provided by the SDK.
  */
 use \DTS\eBaySDK\Constants;
+use \DTS\eBaySDK\BulkDataExchange\Enums;
 use \DTS\eBaySDK\BulkDataExchange\Services;
 use \DTS\eBaySDK\BulkDataExchange\Types;
 
@@ -63,7 +64,7 @@ if (isset($response->errorMessage)) {
     foreach ($response->errorMessage->error as $error) {
         printf(
             "%s: %s\n\n",
-            $error->severity === BulkDataExchange\Enums\ErrorSeverity::C_ERROR ? 'Error' : 'Warning',
+            $error->severity === Enums\ErrorSeverity::C_ERROR ? 'Error' : 'Warning',
             $error->message
         );
     }
