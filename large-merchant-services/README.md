@@ -22,6 +22,6 @@ These examples show how to use the eBay SDK for PHP with the Large Merchant Serv
 
    This example uses the ReviseInventoryStatus available via the LMS.
 
-1. [Abort Job](https://github.com/davidtsadler/ebay-sdk-examples/blob/master/large-merchant-services/06-abort-job.php)
+1. [Abort Job](https://github.com/davidtsadler/ebay-sdk-examples/blob/master/large-merchant-services/06-abort.job.php)
 
    This example will abort a specificed LMS job on the eBay sandbox.
